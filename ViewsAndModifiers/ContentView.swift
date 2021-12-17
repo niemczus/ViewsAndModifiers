@@ -8,9 +8,18 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    @ViewBuilder var spells: some View {
+        Text("Lumos")
+        Text("Obliviate")
+        Text("Alohomora")
+    }
+    
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        HStack {
+            spells
+        }
+        
     }
 }
 
